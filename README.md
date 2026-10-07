@@ -40,7 +40,18 @@ Today the token sits in plain DataStore, which is acceptable only because it is 
 iOS already runs from this codebase: `shared` compiles to an iOS framework, `iosApp` hosts `MainViewController()`, and Koin is started from Swift (`KoinIosKt.doInitKoinIos()`). Platform-specific code is limited to the DB path, the DataStore path and `NWPathMonitor`.
 
 If the team wanted a fully native UI, I would keep `shared` (domain, data, ViewModels) and rebuild only the screens in SwiftUI, observing the `StateFlow`s through SKIE or KMP-NativeCoroutines. A fully native rewrite would follow the same layers with SwiftUI, `@Observable` view models, async/await, URLSession, SwiftData and the Keychain.
+
+
+
+https://github.com/user-attachments/assets/d2d39ea2-b0c1-45f4-9db6-32f2b611d55d
+
+
+
+
+
 <img width="867" height="906" alt="Screenshot 2026-10-07 at 9 23 03 PM" src="https://github.com/user-attachments/assets/df74e898-c2e5-4069-99b7-2ca7e4546bf0" />
 <img width="856" height="905" alt="Screenshot 2026-10-07 at 9 22 27 PM" src="https://github.com/user-attachments/assets/754ae872-dc0d-478d-9f90-88266f34915e" />
 <img width="922" height="877" alt="Screenshot 2026-10-07 at 9 22 04 PM" src="https://github.com/user-attachments/assets/a3b88f17-b9b5-49a3-b495-782947666ba7" />
+
+
 
